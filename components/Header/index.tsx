@@ -14,7 +14,7 @@ const Header = (props: any) => {
   }
 
   return (
-    <div className="w-full h-20 bg-elements dark:bg-dark-elements flex items-center justify-between px-20">
+    <div className="w-full h-20 shadow-md bg-elements dark:bg-dark-elements flex items-center justify-between px-20">
       <p className="font-bold text-3xl text-text dark:text-dark-text">
         Where in the world?
       </p>
