@@ -18,7 +18,7 @@ const FilterDropdown = () => {
   useOutsideDetector(filterBtnRef, setIsOpen)
 
   return (
-    <div className="flex flex-col relative" ref={filterBtnRef}>
+    <div className="flex flex-col relative shadow-xl" ref={filterBtnRef}>
       <button
         id="dropdownDefaultButton"
         data-dropdown-toggle="dropdown"

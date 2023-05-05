@@ -63,16 +63,18 @@ export default function Home() {
   })
 
   return (
-    <main className="max-w-[1060px] flex flex-col justify-center mx-auto">
-      <div className="flex flex-wrap w-full justify-between items-center px-2 miniDesktop:px-6">
-        <SearchInput />
-        <FilterDropdown />
-      </div>
-      <div className="flex flex-wrap w-full justify-center">
-        {countries.map((items) => (
-          <Card key={items.title} items={items} />
-        ))}
-      </div>
-    </main>
+    <div className="min-h-[calc(100vh-80px)] bg-background dark:bg-dark-background">
+      <main className="max-w-[1060px] flex flex-col justify-center mx-auto">
+        <div className="flex flex-wrap w-full justify-between items-center px-2 miniDesktop:px-6">
+          <SearchInput />
+          <FilterDropdown />
+        </div>
+        <div className="flex flex-wrap w-full justify-center">
+          {countries.map((items) => (
+            <Card key={items.title} items={items} />
+          ))}
+        </div>
+      </main>
+    </div>
   )
 }
